@@ -1,0 +1,101 @@
+<idea-plugin>
+    <id>tecbot.tecbotid</id>
+    <name>FRC Project Manager [UNOFFICIAL]</name>
+    <version>1.0.7</version>
+
+    <description><![CDATA[
+    The FRC Project Template Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
+    Commands, etc.<br>
+    You must have <a href="https://git-scm.com/download">GIT</a> installed on your computer.<br>
+    Warning: This plugin only works on windows for now.<br>
+    <br>
+    This plugin has been created by <a href="https://github.com/trevcan">Hector Canizales</a>, a team member from Tecbot 3158 First Robotics Competition
+    For Inspiration and Recognition of Science and Technology. (<a href="http://first.org.mx/frc/">FRC</a>, <a href="http://first.org.mx/frc/">FIRST</a>)
+    ]]></description>
+
+    <change-notes><![CDATA[
+
+        <ul>
+        <br>
+        <li><strong>v1.0.7 (Stable)</strong></li>
+
+        Now downloads the github Repository inside the user's directory.
+        Added support for creating a new project based off a user folder.
+        Changed the way the 'Update Templates' command worked, since it was not previously able to update the existing
+        repository.
+
+        v0.0.3 (Stable)
+
+        Now downloads the github Repository inside the user's directory.
+        Added the New Commands Based Project... tab.
+        Added the New Iterative Project... tab.
+        Added the New Sample Project... tab.
+        Added the New Timed Project... tab.
+        Added the New Timed Skeleton Project... tab.
+        Added the New Tecbot Project... tab.
+
+
+        0.0.1 (Stable)
+
+        There were not really any changes at all, this was just committed in order to have a Stable version.
+
+        v0.0.1 (Early Release)
+        Initial test to check if commits are successful.
+        Added the Update Templates tab.
+        Added the New Command Project... tab.
+        </ul>
+]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="Tecbot.CreateNewProject" text="FRC" description="FRC tools.">
+
+
+            <!-- <add-to-group group-id="MainMenu" anchor="last"/>
+            <add-to-group group-id="NewProjectOrModuleGroup" anchor="last"/> -->
+            <!-- <add-to-group group-id="addToAllNecessaryGroups" anchor="first"/> -->
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <!-- <add-to-group group-id="FileMenu" anchor="first"/> -->
+            <add-to-group group-id="NewProjectOrModuleGroup" anchor="first"/>
+
+
+            <action class="CreateNewCommandBasedProject" description="Creates new FRC Command based Robot Project."
+                    text="New Command Based Project..."/>
+            <action class="CreateNewIterativeBasedProject" description="Creates new FRC Iterative based Robot Project."
+                    text="New Iterative Project..."/>
+            <action class="CreateNewSampleBasedProject" description="Creates new FRC Sample based Robot Project."
+                    text="New Sample Project..."/>
+            <action class="CreateNewTimedBasedProject" description="Creates new FRC Timed based Robot Project."
+                    text="New Timed Project..."/>
+            <action class="CreateNewTimedSkeletonAdvancedProject"
+                    description="Creates new FRC Timed Skeleton Advanced Robot Project."
+                    text="New Timed Skeleton Project..."/>
+            <action class="CreateNewProjectFromSpecificFolder" description="Creates new project from specified source."
+                    text="New Project from specific source."/>
+            <action class="CreateNewTecbotProject" description="Creates new FRC Tecbot3158 Project"
+                    text="New Tecbot Project..."/>
+
+            <action class="UpdateTemplates" description="Overwrites source folder" text="Update Templates"
+                    popup="true"/>
+
+            <!--<separator text="Create New...hi"/> -->
+
+        </group>
+    </actions>
+
+    <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
+</idea-plugin>

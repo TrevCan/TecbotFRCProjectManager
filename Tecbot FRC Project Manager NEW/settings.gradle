@@ -1,0 +1,4 @@
+rootProject.name = 'Tecbot FRC Project Manager NEW'
+include 'main'
+findProject(':main')?.name = 'tecbotid'
+
