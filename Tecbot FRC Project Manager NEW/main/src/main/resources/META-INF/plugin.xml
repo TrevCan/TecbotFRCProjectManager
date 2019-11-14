@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>tecbot.tecbotid</id>
     <name>FRC Project Manager [UNOFFICIAL]</name>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
 
     <description><![CDATA[
     The FRC Project Template Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
@@ -16,33 +16,38 @@
     <change-notes><![CDATA[
 
         <ul>
+        <li><strong>v1.0.8 (Stable)</strong></li>
+        Fixed Change notes. <br>
+        Added support for Linux and Mac devices. (Not tested)<br>
+
         <br>
+
         <li><strong>v1.0.7 (Stable)</strong></li>
-
-        Now downloads the github Repository inside the user's directory.
-        Added support for creating a new project based off a user folder.
+        Now downloads the github Repository inside the user's directory.<br>
+        Added support for creating a new project based off a user folder.<br>
         Changed the way the 'Update Templates' command worked, since it was not previously able to update the existing
-        repository.
+        repository.<br>
+        <br>
 
-        v0.0.3 (Stable)
+        <li><strong>v0.0.3 (Stable)</strong></li>
+        Now downloads the github Repository inside the user's directory.<br>
+        Added the New Commands Based Project... tab.<br>
+        Added the New Iterative Project... tab.<br>
+        Added the New Sample Project... tab.<br>
+        Added the New Timed Project... tab.<br>
+        Added the New Timed Skeleton Project... tab.<br>
+        Added the New Tecbot Project... tab.<br>
+        <br>
 
-        Now downloads the github Repository inside the user's directory.
-        Added the New Commands Based Project... tab.
-        Added the New Iterative Project... tab.
-        Added the New Sample Project... tab.
-        Added the New Timed Project... tab.
-        Added the New Timed Skeleton Project... tab.
-        Added the New Tecbot Project... tab.
+        <li><strong>v0.0.1 (Stable)</strong></li>
+        There were not really any changes at all, this was just committed in order to have a Stable version.<br>
+        <br>
 
+        <li><strong>v0.0.1 (Early Release)</strong></li>
+        Initial test to check if commits are successful.<br>
+        Added the Update Templates tab.<br>
+        Added the New Command Project... tab.<br>
 
-        0.0.1 (Stable)
-
-        There were not really any changes at all, this was just committed in order to have a Stable version.
-
-        v0.0.1 (Early Release)
-        Initial test to check if commits are successful.
-        Added the Update Templates tab.
-        Added the New Command Project... tab.
         </ul>
 ]]>
     </change-notes>

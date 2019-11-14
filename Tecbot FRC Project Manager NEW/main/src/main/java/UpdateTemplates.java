@@ -22,13 +22,14 @@ public class UpdateTemplates extends AnAction {
             Messages.showErrorDialog("Path not found.","Tecbot FRC Template Manager");
             return;
         }
-        Messages.showMessageDialog("Copying File Templates to " + stringPath, "FRC Template Manager", IconLoader.getIcon("META-INF/pluginIcon.svg"));
+        Messages.showMessageDialog("Copying File Templates to " + stringPath, "FRC Template Manager", IconLoader.getIcon("META-INF/tecbotIcon.svg"));
         File targetPath = new File(stringPath+"\\config\\fileTemplates");
-        File sourceFolder = new File("C:\\TecbotFRC_Templates\\fileTemplates");
+        File sourceFolder = new File(System.getProperty("user.home")+"\\TecbotFRC_Templates\\fileTemplates");
         try {
             ImportantResources.copyFolder(sourceFolder,targetPath);
             Messages.showInfoMessage("Files successfully copied. Please restart IntelliJIdea","Tecbot FRC Template Manager");
         } catch (IOException ex) {
+            Messages.showErrorDialog("There has been an error during the copying of the File Templates. Please make sure that you have the TecbotFRC_Templates under "+System.getProperty("user.home"),ImportantResources.title);
             ex.printStackTrace();
         }
         //TIENE EL '/' NORMAL O SEA ESE

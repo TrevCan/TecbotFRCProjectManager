@@ -68,7 +68,7 @@ public class ImportantResources {
         }
     }
 
-    public static void deleteRemoteRepository(){
+    public static void deleteRemoteRepository() {
         if (System.getProperty("os.name").contains("Win")) {
             //Messages.showInfoMessage("your system is " + System.getProperty("os.name"), title);
             ProcessBuilder builder = new ProcessBuilder(
@@ -93,6 +93,44 @@ public class ImportantResources {
                 if (line == null) {
                     break;
                 }
+            }
+        } else {
+            /*ProcessBuilder builder = new ProcessBuilder();
+            builder.command("sh", "-c", "cd "+System.getProperty("user.home")+" && rm -r TecbotFRC_Templates");*/
+
+            ProcessBuilder processBuilder = new ProcessBuilder();
+
+            // -- Linux --
+
+            // Run a shell command
+            processBuilder.command("bash", "-c", "cd " + System.getProperty("user.home") + " && rm -r TecbotFRC_Templates");
+            try {
+
+                Process process = processBuilder.start();
+
+                StringBuilder output = new StringBuilder();
+
+                BufferedReader reader = new BufferedReader(
+                        new InputStreamReader(process.getInputStream()));
+
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    output.append(line + "\n");
+                }
+
+                int exitVal = process.waitFor();
+                if (exitVal == 0) {
+                    System.out.println("Success!");
+                    System.out.println(output);
+                    System.exit(0);
+                } else {
+                    //abnormal...
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -130,7 +168,6 @@ public class ImportantResources {
                 System.out.println(line);
             }
         } else {
-            Messages.showInfoMessage("your system is " + System.getProperty("os.name"), title);
             ProcessBuilder processBuilder = new ProcessBuilder();
 
             // -- Linux --
@@ -177,9 +214,13 @@ public class ImportantResources {
     }
 
     public static void createProject(@NotNull String templatePathName) {
+        if (!((new File(System.getProperty("user.home") + "\\TecbotFRC_Templates\\project_templates\\")).exists())) {
+            Messages.showErrorDialog("Directory 'TecbotFRC_Templates' not found in " + System.getProperty("user.dir") + ".\nIt is recommended that you download the repository using the 'UpdateTemplates' button, otherwise you won't be able to use this plugin.", title);
+            return;
+        }
         String projectName, stringTargetPath;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/pluginIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
@@ -222,7 +263,7 @@ public class ImportantResources {
     public static void createProjectFromSpecificFolder() {
         String projectName, stringTargetPath;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/pluginIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
@@ -238,7 +279,7 @@ public class ImportantResources {
             Messages.showErrorDialog(targetPathWithoutProjectName + " not found. Please try again.", title);
             return;
         }
-        sourceFolder = new File(getPathFolderChooser(title,"Please specify the directory from which you would like to clone the project."));
+        sourceFolder = new File(getPathFolderChooser(title, "Please specify the directory from which you would like to clone the project."));
         if (!sourceFolder.exists()) {
             Messages.showErrorDialog(sourceFolder + " not found. Please check that the folder " + getRepositoryPath() + " exists.", title);
             return;

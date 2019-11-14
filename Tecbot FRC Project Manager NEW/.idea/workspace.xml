@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="" />
+    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/UpdateTemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/UpdateTemplates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/tecbot32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/tecbotIcon.svg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +84,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1T8DWesljlxzoJxk3tp02bvGicN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitHub/RobotCode_2019" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -98,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tecbot FRC Project Manager NEW [publishPlugin]">
+  <component name="RunManager" selected="Gradle.Tecbot FRC Project Manager NEW [runIde]">
     <configuration name="Plugin" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,7 +142,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [buildSearchableOptions]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tecbot FRC Project Manager NEW [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +153,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildSearchableOptions" />
+            <option value="buildPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [publishPlugin]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [jarSearchableOptions]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [buildSearchableOptions]" />
         <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [patchPluginXml]" />
         <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [runIde]" />
+        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [buildPlugin]" />
+        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [publishPlugin]" />
+        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [jarSearchableOptions]" />
       </list>
     </recent_temporary>
   </component>
@@ -253,10 +277,27 @@
       <workItem from="1573053603550" duration="986000" />
       <workItem from="1573054785098" duration="1574000" />
       <workItem from="1573063610365" duration="664000" />
+      <workItem from="1573589610435" duration="456000" />
+      <workItem from="1573590129963" duration="897000" />
+      <workItem from="1573598953064" duration="52000" />
+      <workItem from="1573693958314" duration="1676000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
