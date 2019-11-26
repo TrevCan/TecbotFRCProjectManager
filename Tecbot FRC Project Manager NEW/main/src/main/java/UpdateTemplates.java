@@ -15,7 +15,7 @@ public class UpdateTemplates extends AnAction {
         ImportantResources.downloadRemoteRepository();
         String description = "Please choose the '.IntelliJIdea' folder. It can be found under C:\\Users\\{USER}\\";
 
-        String stringPath = ImportantResources.getPathFolderChooser("Tecbot FRC Template Manager", description);
+        String stringPath = ImportantResources.getPathFolderChooser("Tecbot FRC Template Manager", description,false);
 
         //Messages.showWarningDialog(stringPath,"Tecbot");
         if(stringPath==null || !stringPath.contains("IntelliJ")){

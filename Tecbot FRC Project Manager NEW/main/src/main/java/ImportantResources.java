@@ -1,3 +1,8 @@
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.intellij.icons.AllIcons;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
@@ -6,13 +11,15 @@ import com.intellij.openapi.project.ex.ProjectManagerEx;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.vfs.VirtualFile;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import javax.swing.*;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
@@ -20,9 +27,9 @@ public class ImportantResources {
 
     public static final String title = "FRC Project Manager";
 
-    public static String getPathFolderChooser(String title, String description) {
+    public static String getPathFolderChooser(String title, String description, boolean chooseFiles) {
 
-        FileChooserDescriptor fileChooserDescriptor = new FileChooserDescriptor(false, true, false, false, false, false);
+        FileChooserDescriptor fileChooserDescriptor = new FileChooserDescriptor(chooseFiles, true, false, false, false, false);
         fileChooserDescriptor.setTitle(title);
         fileChooserDescriptor.setDescription(description);
 
@@ -225,7 +232,7 @@ public class ImportantResources {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
         }
-        stringTargetPath = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.");
+        stringTargetPath = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.", false);
         if (stringTargetPath == null) {
             Messages.showErrorDialog("Invalid Directory. Please try again.", title);
             return;
@@ -268,7 +275,7 @@ public class ImportantResources {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
         }
-        stringTargetPath = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.");
+        stringTargetPath = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.", false);
         if (stringTargetPath == null) {
             Messages.showErrorDialog("Invalid Directory. Please try again.", title);
             return;
@@ -279,7 +286,7 @@ public class ImportantResources {
             Messages.showErrorDialog(targetPathWithoutProjectName + " not found. Please try again.", title);
             return;
         }
-        sourceFolder = new File(getPathFolderChooser(title, "Please specify the directory from which you would like to clone the project."));
+        sourceFolder = new File(getPathFolderChooser(title, "Please specify the directory from which you would like to clone the project.", false));
         if (!sourceFolder.exists()) {
             Messages.showErrorDialog(sourceFolder + " not found. Please check that the folder " + getRepositoryPath() + " exists.", title);
             return;
@@ -301,6 +308,62 @@ public class ImportantResources {
         projectManager.openProject(project);
 
         //ProjectManagerEx.getInstanceEx().loadProject(targetPath.toString());
+    }
+
+    public static void editJsonFile(String fileToDeletePath, Integer teamNumber, String targetFolder) {
+
+        File oldJSON = new File(fileToDeletePath);
+        if (oldJSON.exists()) {
+            oldJSON.delete();
+        } else {
+            Messages.showErrorDialog("File '" + oldJSON.getPath() + "'. Attempted to delete file but not found.", title);
+            return;
+        }
+
+        JSONObject jsonObject = new JSONObject();
+
+        try {
+            jsonObject.put("enableCppIntellisense", new Boolean(false));
+            jsonObject.put("currentLanguage", "java");
+            jsonObject.put("projectYear", new Integer(2019));
+
+            jsonObject.put("teamNumber", new Integer(teamNumber));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Messages.showErrorDialog("Unable to add property to JSON File", title);
+        }
+        Messages.showInfoMessage(jsonObject.toString(), title);
+        File newFile = new File(targetFolder + "\\wpilib_preferences.json");
+        FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter;
+        try {
+            fileWriter = new FileWriter(newFile.getPath());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            Messages.showErrorDialog("Was not able to create FileWriter", title);
+        }
+        bufferedWriter = new BufferedWriter(fileWriter);
+        try {
+            bufferedWriter.write(jsonObject.toString());
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Messages.showErrorDialog("Was not able to write to file.", title);
+        }
+
+
+    }
+
+    public static void testJSONFileEditor() {
+        String filePath = getPathFolderChooser(title, "Please select the JSON File to edit.", true);
+        String targetPath = getPathFolderChooser(title, "Please select the JSON File to edit.", false);
+        String value = Messages.showInputDialog("Please write the new value for the property.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+        editJsonFile(filePath, Integer.valueOf(value) == null ? 0 : Integer.valueOf(value), targetPath);
+    }
+
+    public static Icon getTecbotIcon() {
+        return IconLoader.getIcon("META-INF/tecbotIcon.svg");
     }
 
 }

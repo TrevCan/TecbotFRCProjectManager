@@ -4,7 +4,7 @@
     <version>1.0.8</version>
 
     <description><![CDATA[
-    The FRC Project Template Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
+    The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
     Commands, etc.<br>
     You must have <a href="https://git-scm.com/download">GIT</a> installed on your computer.<br>
     Warning: This plugin only works on windows for now.<br>
@@ -17,8 +17,9 @@
 
         <ul>
         <li><strong>v1.0.8 (Stable)</strong></li>
-        Fixed Change notes. <br>
+        Fixed Change Notes. <br>
         Added support for Linux and Mac devices. (Not tested)<br>
+        Added verification for git (It will return an error message if git is not installed).<br>
 
         <br>
 
@@ -97,6 +98,7 @@
             <action class="UpdateTemplates" description="Overwrites source folder" text="Update Templates"
                     popup="true"/>
 
+            <action class="TestJSONEditing" description="overrides json file" text="JSON EDIT"/>
             <!--<separator text="Create New...hi"/> -->
 
         </group>
