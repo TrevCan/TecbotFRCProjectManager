@@ -1,2 +1,10 @@
-**/build
+**/classes
+**/download-task
+**/generated
+**/idea-sandbox
+**/build/libs
+**/libsSearchableOptions
+**/resources
+**/searchableOptions
+**/tmp
 **/.gradle/

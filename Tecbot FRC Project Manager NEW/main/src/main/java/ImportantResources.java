@@ -1,8 +1,3 @@
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.intellij.icons.AllIcons;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
@@ -11,9 +6,7 @@ import com.intellij.openapi.project.ex.ProjectManagerEx;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.vfs.VirtualFile;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -310,9 +303,9 @@ public class ImportantResources {
         //ProjectManagerEx.getInstanceEx().loadProject(targetPath.toString());
     }
 
-    public static void editJsonFile(String fileToDeletePath, Integer teamNumber, String targetFolder) {
+    public static void editJsonFile(String pathFileToDelete, Integer teamNumber, String targetFolder) {
 
-        File oldJSON = new File(fileToDeletePath);
+        File oldJSON = new File(pathFileToDelete);
         if (oldJSON.exists()) {
             oldJSON.delete();
         } else {
@@ -341,7 +334,7 @@ public class ImportantResources {
 
         } catch (IOException e) {
             e.printStackTrace();
-            Messages.showErrorDialog("Was not able to create FileWriter", title);
+            Messages.showErrorDialog("Was not able to create File Writer", title);
         }
         bufferedWriter = new BufferedWriter(fileWriter);
         try {

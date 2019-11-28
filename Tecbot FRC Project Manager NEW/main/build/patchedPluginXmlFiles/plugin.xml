@@ -1,0 +1,72 @@
+<idea-plugin>
+  <idea-version since-build="192.6262" until-build="192.*"/>
+  <id>tecbot.tecbotid</id>
+  <name>FRC Project Manager [UNOFFICIAL]</name>
+  <version>1.0.8</version>
+  <description>
+    The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
+    Commands, etc.&lt;br&gt;
+    You must have &lt;a href="https://git-scm.com/download"&gt;GIT&lt;/a&gt; installed on your computer.&lt;br&gt;
+    Warning: This plugin only works on windows for now.&lt;br&gt;
+    &lt;br&gt;
+    This plugin has been created by &lt;a href="https://github.com/trevcan"&gt;Hector Canizales&lt;/a&gt;, a team member from Tecbot 3158 First Robotics Competition
+    For Inspiration and Recognition of Science and Technology. (&lt;a href="http://first.org.mx/frc/"&gt;FRC&lt;/a&gt;, &lt;a href="http://first.org.mx/frc/"&gt;FIRST&lt;/a&gt;)
+    </description>
+  <change-notes>
+
+        &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;v1.0.8 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        Fixed Change Notes. &lt;br&gt;
+        Added support for Linux and Mac devices. (Not tested)&lt;br&gt;
+        Added verification for git (It will return an error message if git is not installed).&lt;br&gt;
+
+        &lt;br&gt;
+
+        &lt;li&gt;&lt;strong&gt;v1.0.7 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        Now downloads the github Repository inside the user's directory.&lt;br&gt;
+        Added support for creating a new project based off a user folder.&lt;br&gt;
+        Changed the way the 'Update Templates' command worked, since it was not previously able to update the existing
+        repository.&lt;br&gt;
+        &lt;br&gt;
+
+        &lt;li&gt;&lt;strong&gt;v0.0.3 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        Now downloads the github Repository inside the user's directory.&lt;br&gt;
+        Added the New Commands Based Project... tab.&lt;br&gt;
+        Added the New Iterative Project... tab.&lt;br&gt;
+        Added the New Sample Project... tab.&lt;br&gt;
+        Added the New Timed Project... tab.&lt;br&gt;
+        Added the New Timed Skeleton Project... tab.&lt;br&gt;
+        Added the New Tecbot Project... tab.&lt;br&gt;
+        &lt;br&gt;
+
+        &lt;li&gt;&lt;strong&gt;v0.0.1 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        There were not really any changes at all, this was just committed in order to have a Stable version.&lt;br&gt;
+        &lt;br&gt;
+
+        &lt;li&gt;&lt;strong&gt;v0.0.1 (Early Release)&lt;/strong&gt;&lt;/li&gt;
+        Initial test to check if commits are successful.&lt;br&gt;
+        Added the Update Templates tab.&lt;br&gt;
+        Added the New Command Project... tab.&lt;br&gt;
+
+        &lt;/ul&gt;
+
+    </change-notes>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <group id="Tecbot.CreateNewProject" text="FRC" description="FRC tools.">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <add-to-group group-id="NewProjectOrModuleGroup" anchor="first"/>
+      <action class="CreateNewCommandBasedProject" description="Creates new FRC Command based Robot Project." text="New Command Based Project..."/>
+      <action class="CreateNewIterativeBasedProject" description="Creates new FRC Iterative based Robot Project." text="New Iterative Project..."/>
+      <action class="CreateNewSampleBasedProject" description="Creates new FRC Sample based Robot Project." text="New Sample Project..."/>
+      <action class="CreateNewTimedBasedProject" description="Creates new FRC Timed based Robot Project." text="New Timed Project..."/>
+      <action class="CreateNewTimedSkeletonAdvancedProject" description="Creates new FRC Timed Skeleton Advanced Robot Project." text="New Timed Skeleton Project..."/>
+      <action class="CreateNewProjectFromSpecificFolder" description="Creates new project from specified source." text="New Project from specific source."/>
+      <action class="CreateNewTecbotProject" description="Creates new FRC Tecbot3158 Project" text="New Tecbot Project..."/>
+      <action class="UpdateTemplates" description="Overwrites source folder" text="Update Templates" popup="true"/>
+      <action class="TestJSONEditing" description="overrides json file" text="JSON EDIT"/>
+    </group>
+  </actions>
+  <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
+</idea-plugin>
