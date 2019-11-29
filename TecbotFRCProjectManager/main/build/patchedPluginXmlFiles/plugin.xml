@@ -1,7 +1,7 @@
 <idea-plugin url="https://github.com/TrevCan/TecbotFRCProjectManager">
   <id>tecbot.tecbotid</id>
   <name>FRC Project Manager [UNOFFICIAL]</name>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
   <idea-version since-build="192.6262" until-build="192.*"/>
   <description>
@@ -17,12 +17,16 @@
 
         &lt;ul&gt;
 
+        &lt;li&gt;&lt;strong&gt;v1.1.1 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        Fixed idea-version in plugin xml.&lt;br&gt;
+        &lt;br&gt;
+
         &lt;li&gt;&lt;strong&gt;v1.1.0 (Stable)&lt;/strong&gt;&lt;/li&gt;
         Updated compatibility tags in plugin xml.&lt;br&gt;
         &lt;br&gt;
 
         &lt;li&gt;&lt;strong&gt;v1.0.9 (Stable)&lt;/strong&gt;&lt;/li&gt;
-        You can now change the team number of an FRC Project&lt;br&gt;
+        You can now change the team number of an FRC Project.&lt;br&gt;
         When creating any kind of FRC Project, it will prompt the user to input the team number.&lt;br&gt;
         &lt;br&gt;
 
