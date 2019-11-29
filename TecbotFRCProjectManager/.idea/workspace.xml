@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="1.8 version, now asks for team Number">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/TestJSONEditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ChangeTeamNumberFromDirectory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TecbotFRCProjectManager [verifyPlugin]">
+  <component name="RunManager" selected="Gradle.TecbotFRCProjectManager [patchPluginXml]">
     <configuration name="Plugin" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,7 +135,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,26 +146,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="patchPluginXml" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [runIde]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="runIde" />
+            <option value="buildPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,6 +192,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TecbotFRCProjectManager [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="patchPluginXml" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="TecbotFRCProjectManager [verifyPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -239,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TecbotFRCProjectManager [patchPluginXml]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [buildPlugin]" />
         <item itemvalue="Gradle.TecbotFRCProjectManager [verifyPlugin]" />
         <item itemvalue="Gradle.TecbotFRCProjectManager [jarSearchableOptions]" />
         <item itemvalue="Gradle.TecbotFRCProjectManager [buildSearchableOptions]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [runIde]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [patchPluginXml]" />
       </list>
     </recent_temporary>
   </component>
@@ -288,8 +281,23 @@
       <workItem from="1574775768171" duration="1504000" />
       <workItem from="1574982393904" duration="494000" />
       <workItem from="1574982908177" duration="804000" />
-      <workItem from="1574983948383" duration="3877000" />
+      <workItem from="1574983948383" duration="5759000" />
     </task>
+    <task id="LOCAL-00001" summary="1.8 version, now asks for team Number">
+      <created>1574987992375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574987992375</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added 1.8 version under main/build/distributions">
+      <created>1574988206349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574988206349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +318,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.8 version, now asks for team Number" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8 version, now asks for team Number" />
+    <MESSAGE value="Added 1.8 version under main/build/distributions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 1.8 version under main/build/distributions" />
   </component>
 </project>

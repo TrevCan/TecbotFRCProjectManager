@@ -1,9 +1,9 @@
 <idea-plugin url="https://github.com/TrevCan/TecbotFRCProjectManager">
-  <idea-version since-build="192.6262" until-build="192.*"/>
   <id>tecbot.tecbotid</id>
   <name>FRC Project Manager [UNOFFICIAL]</name>
   <version>1.0.9</version>
   <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
+  <idea-version since-build="192.6262" until-build="192.*"/>
   <description>
     The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
     Commands, etc.&lt;br&gt;
