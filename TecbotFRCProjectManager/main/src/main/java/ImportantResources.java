@@ -18,7 +18,7 @@ import java.nio.file.StandardCopyOption;
 
 public class ImportantResources {
 
-    public static final String title = "FRC Project Manager";
+    static final String title = "FRC Project Manager";
 
     public static String getPathFolderChooser(String title, String description, boolean chooseFiles) {
 
@@ -197,9 +197,7 @@ public class ImportantResources {
                     //abnormal...
                 }
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
         }
@@ -218,19 +216,19 @@ public class ImportantResources {
             Messages.showErrorDialog("Directory 'TecbotFRC_Templates' not found in " + System.getProperty("user.dir") + ".\nIt is recommended that you download the repository using the 'UpdateTemplates' button, otherwise you won't be able to use this plugin.", title);
             return;
         }
-        String projectName, stringTargetPath;
+        String projectName, stringTargetPathWithoutProjectName;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, getTecbotIcon());
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
         }
-        stringTargetPath = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.", false);
-        if (stringTargetPath == null) {
+        stringTargetPathWithoutProjectName = ImportantResources.getPathFolderChooser(title, "Please choose a directory in which your project will be. A new folder will be created inside that directory.", false);
+        if (stringTargetPathWithoutProjectName == null) {
             Messages.showErrorDialog("Invalid Directory. Please try again.", title);
             return;
         }
-        targetPathWithoutProjectName = new File(stringTargetPath);
+        targetPathWithoutProjectName = new File(stringTargetPathWithoutProjectName);
 
         if (!targetPathWithoutProjectName.exists()) {
             Messages.showErrorDialog(targetPathWithoutProjectName + " not found. Please try again.", title);
@@ -241,13 +239,16 @@ public class ImportantResources {
             Messages.showErrorDialog(sourceFolder + " not found. Please check that the folder " + getRepositoryPath() + " exists.", title);
             return;
         }
-        targetPath = new File(stringTargetPath + "\\" + projectName);
+        targetPath = new File(stringTargetPathWithoutProjectName + "\\" + projectName);
         Messages.showInfoMessage("Copying to " + targetPath + "\n from " + sourceFolder, title);
         try {
             ImportantResources.copyFolder(sourceFolder, targetPath);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+
+        editTeamNumber(targetPath.getPath());
+
         Messages.showInfoMessage("Project successfully created!", title);
 
         final ProjectManagerEx projectManager = ProjectManagerEx.getInstanceEx();
@@ -263,7 +264,7 @@ public class ImportantResources {
     public static void createProjectFromSpecificFolder() {
         String projectName, stringTargetPath;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, getTecbotIcon());
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
@@ -303,9 +304,9 @@ public class ImportantResources {
         //ProjectManagerEx.getInstanceEx().loadProject(targetPath.toString());
     }
 
-    public static void editJsonFile(String pathFileToDelete, Integer teamNumber, String targetFolder) {
+    public static void deleteAndCreateNewJSONFile(String sourceFolderW_wpilib_directory, Integer teamNumber) {
 
-        File oldJSON = new File(pathFileToDelete);
+        File oldJSON = new File(sourceFolderW_wpilib_directory+"\\wpilib_preferences.json");
         if (oldJSON.exists()) {
             oldJSON.delete();
         } else {
@@ -326,7 +327,7 @@ public class ImportantResources {
             Messages.showErrorDialog("Unable to add property to JSON File", title);
         }
         Messages.showInfoMessage(jsonObject.toString(), title);
-        File newFile = new File(targetFolder + "\\wpilib_preferences.json");
+        File newFile = new File(sourceFolderW_wpilib_directory + "\\wpilib_preferences.json");
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter;
         try {
@@ -348,11 +349,10 @@ public class ImportantResources {
 
     }
 
-    public static void testJSONFileEditor() {
-        String filePath = getPathFolderChooser(title, "Please select the JSON File to edit.", true);
-        String targetPath = getPathFolderChooser(title, "Please select the JSON File to edit.", false);
-        String value = Messages.showInputDialog("Please write the new value for the property.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
-        editJsonFile(filePath, Integer.valueOf(value) == null ? 0 : Integer.valueOf(value), targetPath);
+    public static void editTeamNumber(String sourceFolder) {
+        sourceFolder += "\\.wpilib";
+        String value = Messages.showInputDialog("Please write the new value for the team number. If this is not an integer the team number will be 0.", title, getTecbotIcon());
+        deleteAndCreateNewJSONFile(sourceFolder, Integer.valueOf(value) == null ? 0 : Integer.valueOf(value));
     }
 
     public static Icon getTecbotIcon() {

@@ -1,8 +1,9 @@
-<idea-plugin>
+<idea-plugin url="https://github.com/TrevCan/TecbotFRCProjectManager">
   <idea-version since-build="192.6262" until-build="192.*"/>
   <id>tecbot.tecbotid</id>
   <name>FRC Project Manager [UNOFFICIAL]</name>
-  <version>1.0.8</version>
+  <version>1.0.9</version>
+  <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
   <description>
     The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
     Commands, etc.&lt;br&gt;
@@ -15,11 +16,16 @@
   <change-notes>
 
         &lt;ul&gt;
+
+        &lt;li&gt;&lt;strong&gt;v1.0.9 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        You can now change the team number of an FRC Project&lt;br&gt;
+        When creating any kind of FRC Project, it will prompt the user to input the team number.&lt;br&gt;
+        &lt;br&gt;
+
         &lt;li&gt;&lt;strong&gt;v1.0.8 (Stable)&lt;/strong&gt;&lt;/li&gt;
         Fixed Change Notes. &lt;br&gt;
         Added support for Linux and Mac devices. (Not tested)&lt;br&gt;
         Added verification for git (It will return an error message if git is not installed).&lt;br&gt;
-
         &lt;br&gt;
 
         &lt;li&gt;&lt;strong&gt;v1.0.7 (Stable)&lt;/strong&gt;&lt;/li&gt;
@@ -65,8 +71,7 @@
       <action class="CreateNewProjectFromSpecificFolder" description="Creates new project from specified source." text="New Project from specific source."/>
       <action class="CreateNewTecbotProject" description="Creates new FRC Tecbot3158 Project" text="New Tecbot Project..."/>
       <action class="UpdateTemplates" description="Overwrites source folder" text="Update Templates" popup="true"/>
-      <action class="TestJSONEditing" description="overrides json file" text="JSON EDIT"/>
+      <action class="ChangeTeamNumberFromDirectory" description="Deletes old JSON File and creates new file with new team number." text="Change Team Number"/>
     </group>
   </actions>
-  <vendor email="a01369549@itesm.mx" url="https://www.facebook.com/tecbot.team/">Tecbot</vendor>
 </idea-plugin>
