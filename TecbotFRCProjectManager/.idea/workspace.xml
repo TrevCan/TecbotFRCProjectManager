@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -281,7 +282,7 @@
       <workItem from="1574775768171" duration="1504000" />
       <workItem from="1574982393904" duration="494000" />
       <workItem from="1574982908177" duration="804000" />
-      <workItem from="1574983948383" duration="5759000" />
+      <workItem from="1574983948383" duration="7192000" />
     </task>
     <task id="LOCAL-00001" summary="1.8 version, now asks for team Number">
       <created>1574987992375</created>
