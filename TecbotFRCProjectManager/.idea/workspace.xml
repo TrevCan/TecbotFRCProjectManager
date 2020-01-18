@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/tecbotIcon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/TestJSONEditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ChangeTeamNumberWithProjectParameter.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +71,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="TrevCan &lt;heror0484@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1T8DWesljlxzoJxk3tp02bvGicN" />
@@ -292,7 +284,7 @@
       <workItem from="1574775768171" duration="1504000" />
       <workItem from="1574982393904" duration="494000" />
       <workItem from="1574982908177" duration="804000" />
-      <workItem from="1579302996009" duration="2869000" />
+      <workItem from="1579302996009" duration="3100000" />
     </task>
     <servers />
   </component>
@@ -317,6 +309,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="490" y="248" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.720@0.0.1280.720" timestamp="1579303014593" />
+    <state x="95" y="0" key="CommitChangelistDialog2" timestamp="1579306224703">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="95" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579306224703" />
     <state width="1222" height="173" key="GridCell.Tab.0.bottom" timestamp="1579305929864">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
