@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
@@ -6,9 +7,9 @@ import com.intellij.openapi.project.ex.ProjectManagerEx;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.vfs.VirtualFile;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONException;
-import org.json.JSONObject;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -304,9 +305,15 @@ public class ImportantResources {
         //ProjectManagerEx.getInstanceEx().loadProject(targetPath.toString());
     }
 
-    public static void deleteAndCreateNewJSONFile(String sourceFolderW_wpilib_directory, Integer teamNumber) {
+    public static void deleteAndCreateNewJSONFile(String sourceFolder, Integer teamNumber) {
+        if (sourceFolder == null) {
+            Messages.showErrorDialog("Project source folder not found. Aborting operation.", title);
+            return;
+        }
 
-        File oldJSON = new File(sourceFolderW_wpilib_directory+"\\wpilib_preferences.json");
+        sourceFolder += "\\.wpilib";
+
+        File oldJSON = new File(sourceFolder + "\\wpilib_preferences.json");
         if (oldJSON.exists()) {
             oldJSON.delete();
         } else {
@@ -314,20 +321,30 @@ public class ImportantResources {
             return;
         }
 
-        JSONObject jsonObject = new JSONObject();
 
+        FileWriter fileWriter = null;
         try {
-            jsonObject.put("enableCppIntellisense", new Boolean(false));
-            jsonObject.put("currentLanguage", "java");
-            jsonObject.put("projectYear", new Integer(2019));
-
-            jsonObject.put("teamNumber", new Integer(teamNumber));
-        } catch (JSONException e) {
+            fileWriter = new FileWriter(sourceFolder + "\\wpilib_preferences.json");
+        } catch (IOException e) {
             e.printStackTrace();
-            Messages.showErrorDialog("Unable to add property to JSON File", title);
         }
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        try {
+            bufferedWriter.newLine();
+            bufferedWriter.write("{ \"enableCppIntellisense\":false, \"currentLanguage\":\"java\", \"projectYear\":2020, \"teamNumber\":" + teamNumber + " }");
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+/*
+            jsonObject.put("enableCppIntellisense", (false));
+            jsonObject.put("currentLanguage", "java");
+            jsonObject.put("projectYear", (2019));
+
+            jsonObject.put("teamNumber", (teamNumber));
+
         Messages.showInfoMessage(jsonObject.toString(), title);
-        File newFile = new File(sourceFolderW_wpilib_directory + "\\wpilib_preferences.json");
+        File newFile = new File(sourceFolder + "\\wpilib_preferences.json");
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter;
         try {
@@ -344,13 +361,12 @@ public class ImportantResources {
         } catch (IOException e) {
             e.printStackTrace();
             Messages.showErrorDialog("Was not able to write to file.", title);
-        }
+        }*/
 
 
     }
 
     public static void editTeamNumber(String sourceFolder) {
-        sourceFolder += "\\.wpilib";
         String value = Messages.showInputDialog("Please write the new value for the team number. If this is not an integer the team number will be 0.", title, getTecbotIcon());
         deleteAndCreateNewJSONFile(sourceFolder, Integer.valueOf(value) == null ? 0 : Integer.valueOf(value));
     }

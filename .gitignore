@@ -1,4 +1,6 @@
 **/tmp
 **/.gradle/
 **/.idea
-**/main/build
+**/main/build/idea-sandbox
+**/main/build/tmp
+**/main/build/generated

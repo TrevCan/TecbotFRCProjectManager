@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="a" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="and" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="asks" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="creates" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="deletes" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="file" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="for" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="json" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="new" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="number" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="previous" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="team" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="the" path="ActionManager" hit="Asks for team number and creates a new json file (deletes the previous json file)." />
+    <option name="based" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="command" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="new" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="project" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="robot" path="ActionManager" hit="Creates new FRC Command based Robot Project." />
+    <option name="based" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="iterative" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="new" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="project" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="robot" path="ActionManager" hit="Creates new FRC Iterative based Robot Project." />
+    <option name="based" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="new" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="project" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="robot" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="sample" path="ActionManager" hit="Creates new FRC Sample based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Tecbot3158 Project" />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Tecbot3158 Project" />
+    <option name="new" path="ActionManager" hit="Creates new FRC Tecbot3158 Project" />
+    <option name="project" path="ActionManager" hit="Creates new FRC Tecbot3158 Project" />
+    <option name="tecbot3158" path="ActionManager" hit="Creates new FRC Tecbot3158 Project" />
+    <option name="advanced" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="new" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="project" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="robot" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="skeleton" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="timed" path="ActionManager" hit="Creates new FRC Timed Skeleton Advanced Robot Project." />
+    <option name="based" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="frc" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="new" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="project" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="robot" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="timed" path="ActionManager" hit="Creates new FRC Timed based Robot Project." />
+    <option name="creates" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="from" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="new" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="project" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="source" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="specified" path="ActionManager" hit="Creates new project from specified source." />
+    <option name="edit" path="ActionManager" hit="Edit Team Number" />
+    <option name="number" path="ActionManager" hit="Edit Team Number" />
+    <option name="team" path="ActionManager" hit="Edit Team Number" />
+    <option name="based" path="ActionManager" hit="New Command Based Project..." />
+    <option name="command" path="ActionManager" hit="New Command Based Project..." />
+    <option name="new" path="ActionManager" hit="New Command Based Project..." />
+    <option name="project" path="ActionManager" hit="New Command Based Project..." />
+    <option name="iterative" path="ActionManager" hit="New Iterative Project..." />
+    <option name="new" path="ActionManager" hit="New Iterative Project..." />
+    <option name="project" path="ActionManager" hit="New Iterative Project..." />
+    <option name="from" path="ActionManager" hit="New Project from specific source." />
+    <option name="new" path="ActionManager" hit="New Project from specific source." />
+    <option name="project" path="ActionManager" hit="New Project from specific source." />
+    <option name="source" path="ActionManager" hit="New Project from specific source." />
+    <option name="specific" path="ActionManager" hit="New Project from specific source." />
+    <option name="new" path="ActionManager" hit="New Sample Project..." />
+    <option name="project" path="ActionManager" hit="New Sample Project..." />
+    <option name="sample" path="ActionManager" hit="New Sample Project..." />
+    <option name="new" path="ActionManager" hit="New Tecbot Project..." />
+    <option name="project" path="ActionManager" hit="New Tecbot Project..." />
+    <option name="tecbot" path="ActionManager" hit="New Tecbot Project..." />
+    <option name="new" path="ActionManager" hit="New Timed Project..." />
+    <option name="project" path="ActionManager" hit="New Timed Project..." />
+    <option name="timed" path="ActionManager" hit="New Timed Project..." />
+    <option name="new" path="ActionManager" hit="New Timed Skeleton Project..." />
+    <option name="project" path="ActionManager" hit="New Timed Skeleton Project..." />
+    <option name="skeleton" path="ActionManager" hit="New Timed Skeleton Project..." />
+    <option name="timed" path="ActionManager" hit="New Timed Skeleton Project..." />
+    <option name="folder" path="ActionManager" hit="Overwrites source folder" />
+    <option name="overwrites" path="ActionManager" hit="Overwrites source folder" />
+    <option name="source" path="ActionManager" hit="Overwrites source folder" />
+    <option name="templates" path="ActionManager" hit="Update Templates" />
+    <option name="update" path="ActionManager" hit="Update Templates" />
+  </configurable>
+</options>
+
