@@ -220,7 +220,7 @@ public class ImportantResources {
         }
         String projectName, stringTargetPath;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, getTecbotIcon());
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
@@ -248,6 +248,7 @@ public class ImportantResources {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+        editJSON_byProjectString(targetPath.toString());
         Messages.showInfoMessage("Project successfully created!", title);
 
         final ProjectManagerEx projectManager = ProjectManagerEx.getInstanceEx();
@@ -263,7 +264,7 @@ public class ImportantResources {
     public static void createProjectFromSpecificFolder() {
         String projectName, stringTargetPath;
         File targetPathWithoutProjectName, targetPath, sourceFolder;
-        projectName = Messages.showInputDialog("Please enter the project name.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+        projectName = Messages.showInputDialog("Please enter the project name.", title, getTecbotIcon());
         if (projectName == null) {
             Messages.showErrorDialog("Invalid project name. Please try again.", title);
             return;
@@ -304,6 +305,8 @@ public class ImportantResources {
     }
 
     public static void editJsonFile(String pathFileToDelete, Integer teamNumber, String targetFolder) {
+        if(pathFileToDelete==null) Messages.showErrorDialog("JSON to delete not found.",title);
+        if(targetFolder==null) Messages.showErrorDialog("Target folder not found.",title);
 
         File oldJSON = new File(pathFileToDelete);
         if (oldJSON.exists()) {
@@ -348,10 +351,12 @@ public class ImportantResources {
 
     }
 
-    public static void testJSONFileEditor() {
-        String filePath = getPathFolderChooser(title, "Please select the JSON File to edit.", true);
-        String targetPath = getPathFolderChooser(title, "Please select the JSON File to edit.", false);
-        String value = Messages.showInputDialog("Please write the new value for the property.", title, IconLoader.getIcon("META-INF/tecbotIcon.svg"));
+    public static void editJSON_byProjectString(String projectPath_) {
+
+        String projectPath = projectPath_;
+        String filePath = projectPath + "\\.wpilib\\wpilib_preferences.json";
+        String targetPath = projectPath + "\\.wpilib";
+        String value = Messages.showInputDialog("Please write the new team number. If not an integer, 0 is default.", title, getTecbotIcon());
         editJsonFile(filePath, Integer.valueOf(value) == null ? 0 : Integer.valueOf(value), targetPath);
     }
 

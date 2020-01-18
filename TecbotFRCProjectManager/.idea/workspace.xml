@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/tecbotIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.0.8.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ImportantResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/TestJSONEditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/ChangeTeamNumberWithProjectParameter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +61,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Tecbot FRC Project Manager NEW" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Tecbot FRC Project Manager NEW" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="intellij" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -70,6 +88,11 @@
   </component>
   <component name="ProjectId" id="1T8DWesljlxzoJxk3tp02bvGicN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -91,19 +114,7 @@
       <recent name="C:\Users\heror\Documents\Tecbot FRC Project Manager NEW\main\src\main\resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Gradle.Tecbot FRC Project Manager NEW [runIde]">
+  <component name="RunManager" selected="Gradle.TecbotFRCProjectManager [prepareTestingSandbox]">
     <configuration name="Plugin" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -123,7 +134,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [buildSearchableOptions]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +145,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildPlugin" />
+            <option value="buildSearchableOptions" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +153,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [jarSearchableOptions]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [jarSearchableOptions]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +172,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +191,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [prepareSandbox]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +202,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="publishPlugin" />
+            <option value="prepareSandbox" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,7 +210,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tecbot FRC Project Manager NEW [runIde]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TecbotFRCProjectManager [prepareTestingSandbox]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,7 +221,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="runIde" />
+            <option value="prepareTestingSandbox" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,13 +231,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [runIde]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [patchPluginXml]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [buildPlugin]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [publishPlugin]" />
-        <item itemvalue="Gradle.Tecbot FRC Project Manager NEW [jarSearchableOptions]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [prepareTestingSandbox]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [prepareSandbox]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [patchPluginXml]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [jarSearchableOptions]" />
+        <item itemvalue="Gradle.TecbotFRCProjectManager [buildSearchableOptions]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -269,6 +292,7 @@
       <workItem from="1574775768171" duration="1504000" />
       <workItem from="1574982393904" duration="494000" />
       <workItem from="1574982908177" duration="804000" />
+      <workItem from="1579302996009" duration="2869000" />
     </task>
     <servers />
   </component>
@@ -287,5 +311,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="490" y="248" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579303014593">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="490" y="248" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.720@0.0.1280.720" timestamp="1579303014593" />
+    <state width="1222" height="173" key="GridCell.Tab.0.bottom" timestamp="1579305929864">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1222" height="173" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579305929864" />
+    <state width="1222" height="173" key="GridCell.Tab.0.center" timestamp="1579305929864">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1222" height="173" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579305929864" />
+    <state width="1222" height="173" key="GridCell.Tab.0.left" timestamp="1579305929864">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1222" height="173" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579305929864" />
+    <state width="1222" height="173" key="GridCell.Tab.0.right" timestamp="1579305929864">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1222" height="173" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579305929864" />
+    <state x="297" y="163" key="run.anything.popup" timestamp="1579305837471">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="297" y="163" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1579305837471" />
   </component>
 </project>
