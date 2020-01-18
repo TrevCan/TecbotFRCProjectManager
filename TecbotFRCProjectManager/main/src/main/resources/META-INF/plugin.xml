@@ -1,9 +1,9 @@
 <idea-plugin>
     <id>tecbot.tecbotid</id>
     <name>FRC Project Manager [UNOFFICIAL]</name>
-    <version>1.1.2</version>
+    <version>1.1.2.192</version>
 
-    <idea-version since-build="193" until-build="193.*"/>
+    <idea-version since-build="192" until-build="192.*"/>
 
     <description><![CDATA[
     The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
@@ -21,6 +21,12 @@
 
         <ul>
 
+
+        <li><strong>v1.1.2.192 (Stable)</strong></li>
+        This version is exactly the same as v1.1.2 but this one is compatible with 192
+        intellij idea versions.<br>
+
+        <br>
 
         <li><strong>v1.1.2 (Stable)</strong></li>
         Fixed some json stuff. <br>
