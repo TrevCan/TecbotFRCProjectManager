@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="This version (v1.1.1) is compatible with 193.5662.53 and up to 193.*">
+    <list default="true" id="0c10d876-ee13-4ebc-80a6-82679aca528b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.1.1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.1.1.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.1.2.192.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.1.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/libs/tecbotid-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/libs/tecbotid-1.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/libsSearchableOptions/lib/searchableOptions-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/libsSearchableOptions/lib/searchableOptions-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/distributions/tecbotid-1.1.1.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/build/resources/main/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/resources/main/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/build/resources/main/json-simple-1.1.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/resources/json-simple-1.1.1.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +53,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Tecbot FRC Project Manager NEW" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Tecbot FRC Project Manager NEW" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -323,8 +311,16 @@
       <workItem from="1579559354320" duration="1013000" />
       <workItem from="1579561745212" duration="5000" />
       <workItem from="1579561778148" duration="18000" />
-      <workItem from="1579561889528" duration="620000" />
+      <workItem from="1579561889528" duration="1977000" />
     </task>
+    <task id="LOCAL-00001" summary="This version (v1.1.1) is compatible with 193.5662.53 and up to 193.*">
+      <created>1579562530889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579562530889</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +349,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="19" key="#Deployment/0.0.1280.720@0.0.1280.720" timestamp="1579562437526" />
+    <state x="233" y="20" key="#Notifications" timestamp="1579563266398">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="20" key="#Notifications/0.0.1280.720@0.0.1280.720" timestamp="1579563266398" />
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579559385870">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -365,34 +365,42 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="321" y="88" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1579477563103" />
-    <state x="8" y="0" key="CommitChangelistDialog2" timestamp="1579562453119">
+    <state x="8" y="0" key="CommitChangelistDialog2" timestamp="1579563934615">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="8" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579562453119" />
+    <state x="8" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579563934615" />
     <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1579562092003">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1579562092003" />
-    <state width="618" height="176" key="GridCell.Tab.0.bottom" timestamp="1579561631130">
+    <state width="618" height="176" key="GridCell.Tab.0.bottom" timestamp="1579563934632">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="618" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579561631130" />
-    <state width="618" height="176" key="GridCell.Tab.0.center" timestamp="1579561631130">
+    <state width="618" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579563934632" />
+    <state width="618" height="176" key="GridCell.Tab.0.center" timestamp="1579563934631">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="618" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579561631130" />
-    <state width="618" height="176" key="GridCell.Tab.0.left" timestamp="1579561631130">
+    <state width="618" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579563934631" />
+    <state width="618" height="176" key="GridCell.Tab.0.left" timestamp="1579563934631">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="618" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579561631130" />
-    <state width="618" height="176" key="GridCell.Tab.0.right" timestamp="1579561631130">
+    <state width="618" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579563934631" />
+    <state width="618" height="176" key="GridCell.Tab.0.right" timestamp="1579563934631">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="618" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579561631130" />
+    <state width="618" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579563934631" />
+    <state x="221" y="104" key="IDE.errors.dialog" timestamp="1579563654082">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="221" y="104" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1579563654082" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1579481991272">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1579481991272" />
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1579562537885">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1579562537885" />
     <state x="337" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1579561891348">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -409,9 +417,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="91" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1579369031608" />
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1579562288105">
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1579563405649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1579562288105" />
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1579563405649" />
   </component>
 </project>
