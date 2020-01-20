@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>tecbot.tecbotid</id>
   <name>FRC Project Manager [UNOFFICIAL]</name>
-  <version>1.1.2.192</version>
+  <version>1.1.1</version>
   <idea-version since-build="193.6015" until-build="193.*"/>
   <description>
     The FRC Project Manager [UNOFFICIAL] is a plugin that can clone FRC projects, help you create new Subsystems,
@@ -19,20 +19,16 @@
         &lt;ul&gt;
 
 
-        &lt;li&gt;&lt;strong&gt;v1.1.2.192 (Stable)&lt;/strong&gt;&lt;/li&gt;
-        This version is exactly the same as v1.1.2 but this one is compatible with 192
+        &lt;li&gt;&lt;strong&gt;v1.1.1.192 (Stable)&lt;/strong&gt;&lt;/li&gt;
+        This version is exactly the same as v1.1.1 but this one is compatible with 192.7142.36
         intellij idea versions.&lt;br&gt;
-
-        &lt;br&gt;
-
-        &lt;li&gt;&lt;strong&gt;v1.1.2 (Stable)&lt;/strong&gt;&lt;/li&gt;
-        Fixed some json stuff. &lt;br&gt;
 
         &lt;br&gt;
 
         &lt;li&gt;&lt;strong&gt;v1.1.1 (Stable)&lt;/strong&gt;&lt;/li&gt;
         Every time you create a new FRC Project, a prompt will appear asking for the team number.&lt;br&gt;
         There is also an extra action where you can change the team number by selecting your project path.&lt;br&gt;
+        Only works for the latest version of IntelliJ Idea &lt;strong&gt;(higher than or equal to 193.5662.53 and until build 193.*)&lt;/strong&gt;&lt;br&gt;
 
         &lt;br&gt;
 
